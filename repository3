@@ -1,0 +1,20 @@
+namespace homework_2
+{
+    internal class Program
+    {
+        public static string HelloName(string name)
+        {
+            var responce = $"Hello {name}";
+            return responce ;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter name: ");
+            var text = Console.ReadLine();
+            var res = HelloName(text);
+
+            Console.WriteLine($"result: {res}");
+
+        }
+    }
+}
